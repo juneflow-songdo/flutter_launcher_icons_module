@@ -1,0 +1,34 @@
+name: flutter_launcher_icons_module
+description: "JuneFlow Module"
+#publish_to: 'none'
+#repository: https://github.com/melodysdreamj/juneflow
+
+version: 0.1.0
+
+environment:
+  sdk: '>=3.3.1 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  go_router: ^13.2.0
+  june_flow_util: ^0.8.19
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_launcher_icons: ^0.13.1 #@add
+
+flutter:
+  uses-material-design: true
+
+#@add start
+flutter_icons:
+  image_path_android: "assets/launcher_icons/android.png"
+  image_path_ios: "assets/launcher_icons/ios.png"
+  android: true # can specify file name here e.g. "ic_launcher"
+  ios: true # can specify file name here e.g. "My-Launcher-Icon"
+  remove_alpha_ios: true
+  adaptive_icon_background: "#ffffff" # only available for Android 8.0 devices and above
+  adaptive_icon_foreground: "assets/launcher_icons/android.png" # only available for Android 8.0 devices and above
+#@add end
